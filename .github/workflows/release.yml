@@ -102,7 +102,7 @@ jobs:
         env:
           GH_REPO: ${{ github.repository }}
           #GH_TOKEN: ${{ github.token }}
-          GH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_DEBUG: api
         run: |
           gh workflow run sync-release.yml
